@@ -88,7 +88,7 @@ const Player = (name, symbol) => {
 
     return{displaySymbol}
 
-  })
+  })();
 
   gameboard.displayBoard();
   game.displaySymbol();
