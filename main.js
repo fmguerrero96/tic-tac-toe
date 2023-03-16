@@ -21,3 +21,22 @@ const Player = (name, symbol) => {
     
     return{displayBoard, board};
   })();
+
+  const game = (() => {
+    const restartBtn = document.querySelector('.restart');
+    const message = document.querySelector('.turn');
+    let playerTurn = playerX.symbol;
+    message.textContent = `Player ${playerTurn}'s Turn`;
+
+    function displaySymbol(){
+        document.addEventListener('click', e =>{
+          if (e.target.matches('.cell') && (gameboard.board[e.target.id] === '')){
+            gameboard.board[e.target.id] = playerTurn;
+            e.target.textContent = gameboard.board[e.target.id]
+            switchPlayer()
+            checkTie();
+            checkWin();
+          }
+        })
+      }
+  })
