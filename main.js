@@ -78,8 +78,12 @@ const Player = (name, symbol) => {
         } else {message.textContent = 'Player X Wins'}
       }
     
-      const gameTie = () => {
+    const gameTie = () => {
         message.textContent = "It's a tie"
-      }
+        }
+
+    restartBtn.addEventListener('click', () =>{
+        document.location.reload()
+       })
 
   })
