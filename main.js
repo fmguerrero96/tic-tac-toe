@@ -86,4 +86,9 @@ const Player = (name, symbol) => {
         document.location.reload()
        })
 
+    return{displaySymbol}
+
   })
+
+  gameboard.displayBoard();
+  game.displaySymbol();
