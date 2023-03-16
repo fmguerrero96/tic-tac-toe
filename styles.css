@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Russo One', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(81, 183, 255);
+    height: 15vh;
+}
+
+.title {
+    font-size: 300%;
+    color: rgb(255, 153, 0);
+}
+
+main {
+    background-color: rgb(255, 153, 0);
+    height: 85vh;
+}
+
+.board-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 45vh;
+    aspect-ratio: 1/1;
+    border: 10px solid rgb(81, 183, 255);
+    margin: auto;
+}
+
+.turn {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    color: rgb(81, 183, 255);
+}
+
+.cell {
+    border: 3px dotted rgb(255, 153, 0);
+    background-color: rgb(255, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: xx-large;
+    color: rgb(94, 255, 201);
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.restart {
+    width:auto;
+    height: auto;
+    font-size: 2em;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+    background-color: rgb(255, 33, 33);
+    border: none;
+    color: rgb(94, 255, 201);
+    cursor: pointer;
+}
