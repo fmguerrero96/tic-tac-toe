@@ -68,6 +68,10 @@ const Player = (name, symbol) => {
         }
     }
 
+    const tieEvent = (item) => {
+        return item != ''
+      }
+
     const gameWin = () => {
         if (playerTurn === playerX.symbol){
           message.textContent = 'Player O Wins'
