@@ -47,4 +47,24 @@ const Player = (name, symbol) => {
         } else{playerTurn = playerX.symbol
           message.textContent = `Player ${playerTurn}'s Turn`}
       }
+
+      function checkWin(){
+        if (gameboard.board[0] === gameboard.board[1] && gameboard.board[0] === gameboard.board[2] && gameboard.board[0] != ''||
+        gameboard.board[3] === gameboard.board[4] && gameboard.board[3] === gameboard.board[5] && gameboard.board[3] != '' ||
+        gameboard.board[6] === gameboard.board[7] && gameboard.board[6] === gameboard.board[8] && gameboard.board[6] != '' ||
+        gameboard.board[0] === gameboard.board[3] && gameboard.board[0] === gameboard.board[6] && gameboard.board[0] != '' ||
+        gameboard.board[1] === gameboard.board[4] && gameboard.board[1] === gameboard.board[7] && gameboard.board[1] != '' ||
+        gameboard.board[2] === gameboard.board[5] && gameboard.board[2] === gameboard.board[8] && gameboard.board[2] != '' ||
+        gameboard.board[0] === gameboard.board[4] && gameboard.board[0] === gameboard.board[8] && gameboard.board[0] != '' ||
+        gameboard.board[2] === gameboard.board[4] && gameboard.board[2] === gameboard.board[6] && gameboard.board[2] != '' )
+             {
+            gameWin()
+          }
+        }
+    
+      function checkTie() {
+        if (gameboard.board.every(tieEvent)){
+          gameTie()
+        }
+      }
   })
