@@ -39,4 +39,12 @@ const Player = (name, symbol) => {
           }
         })
       }
+
+      function switchPlayer(){
+        if(playerTurn === playerX.symbol){
+          playerTurn = playerO.symbol;
+          message.textContent = `Player ${playerTurn}'s Turn`
+        } else{playerTurn = playerX.symbol
+          message.textContent = `Player ${playerTurn}'s Turn`}
+      }
   })
